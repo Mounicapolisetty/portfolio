@@ -1,0 +1,740 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="MOUNICA SURYA DURGA NAGA SREE POLISETTY - Java Developer & Full-Stack Developer Portfolio">
+  <meta name="keywords" content="Java Developer, Full-Stack Developer, Spring Boot, Web Development, Portfolio">
+  <meta name="author" content="MOUNICA SURYA DURGA NAGA SREE POLISETTY">
+  <title>MOUNICA SURYA DURGA NAGA SREE POLISETTY — Modern Portfolio</title>
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Styles -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <div class="container nav-container">
+      <div class="logo">
+        
+      </div>
+      <nav class="nav-menu">
+        <ul class="nav-links">
+          <li><a href="#hero" class="nav-link">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#certifications" class="nav-link">Certifications</a></li>
+          <li><a href="#experience" class="nav-link">Experience</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#achievements" class="nav-link">Achievements</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+        <div class="theme-toggle" id="theme-toggle">
+          <i class="fas fa-moon"></i>
+        </div>
+        <div class="hamburger" id="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section id="hero" class="hero">
+    <div class="hero-bg">
+      <div class="particles" id="particles"></div>
+    </div>
+    <div class="container hero-container">
+      <div class="hero-content">
+      <div class="hero-text">
+          <div class="greeting">
+            <span class="wave"></span>
+            <span>Hello, I'm</span>
+          </div>
+          <h1 class="hero-title">
+            <span class="name-first">MOUNICA SURYA DURGA NAGA SREE</span>
+      
+            <span class="name-last">POLISETTY</span>
+          </h1>
+          <div class="typing-container">
+            <span class="typing-label">I'm a </span>
+            <span id="typing" class="typing-text"></span>
+            <span class="cursor">|</span>
+          </div>
+          <p class="hero-description">
+            Sekking for an entry-level software engineering position within a product-oriented team where I can leverage 
+            solid programming foundations, data structures knowledge, and system-design principles to develop scalable, 
+            enterprise-grade backend or full-stack solutions.
+          </p>
+          <div class="hero-buttons">
+            <a href="#projects" class="btn btn-primary">
+              <span>View My Work</span>
+              <i class="fas fa-arrow-right"></i>
+            </a>
+            <a href="#contact" class="btn btn-secondary">
+              <span>Get In Touch</span>
+              <i class="fas fa-envelope"></i>
+            </a>
+          </div>
+          
+      </div>
+      <div class="hero-image">
+          <div class="tech-showcase">
+            <!-- Central Profile Photo (Professional Frame) -->
+            <div class="central-profile">
+              <div class="profile-frame">
+                <div class="profile-photo-container">
+                  <img src="assets/mouniimg.jpg" alt="MOUNICA SURYA DURGA NAGA SREE POLISETTY" class="profile-photo">
+                </div>
+                <div class="profile-badge">Full‑Stack Java Developer</div>
+                <div class="profile-social">
+                  <a href="https://www.linkedin.com/in/mounica-polisetty-721678303" class="social-link" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-linkedin"></i>
+                  </a>
+                  <a href="https://github.com/Mounicapolisetty" class="social-link" aria-label="GitHub" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-github"></i>
+                  </a>
+                  <a href="mailto:polisettymounica@gmail.com" class="social-link" aria-label="Email">
+                    <i class="fas fa-envelope"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            
+            
+            
+            <!-- Floating Particles -->
+            <div class="particles-container">
+              <div class="particle particle-1"></div>
+              <div class="particle particle-2"></div>
+              <div class="particle particle-3"></div>
+              <div class="particle particle-4"></div>
+              <div class="particle particle-5"></div>
+              <div class="particle particle-6"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <div class="scroll-arrow">
+        <i class="fas fa-chevron-down"></i>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="about">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">About Me</h2>
+        <p class="section-subtitle">Passionate Java Developer & Full-Stack Enthusiast</p>
+      </div>
+      <div class="about-content">
+        <div class="about-main">
+          <div class="about-card glass-card">
+            <div class="card-icon">
+              <i class="fas fa-user"></i>
+            </div>
+            <h3>Who I Am</h3>
+            <p>
+              A dedicated Electronics & Communication Engineering student with a deep passion for Java Full Stack Development. 
+              Beginning my journey with Core Java fundamentals, I have progressively developed expertise to create comprehensive 
+              applications utilizing Spring Boot, MySQL, HTML, CSS, JavaScript, and React technologies.
+            </p>
+          </div>
+          <div class="about-card glass-card">
+            <div class="card-icon">
+              <i class="fas fa-rocket"></i>
+            </div>
+            <h3>Career Objective</h3>
+            <p>
+              Looking for an entry-level software engineering position within a product-oriented team where I can leverage 
+              solid programming foundations, data structures knowledge, and system-design principles to develop scalable, 
+              enterprise-grade backend or full-stack solutions that enhance user experience and optimize performance.
+            </p>
+          </div>
+        </div>
+        <div class="about-stats">
+          <div class="stat-card glass-card">
+            <div class="stat-icon">
+              <i class="fas fa-code"></i>
+            </div>
+            <div class="stat-number" data-target="3">0</div>
+            <div class="stat-label">Projects Completed</div>
+          </div>
+          
+          <div class="stat-card glass-card">
+            <div class="stat-icon">
+              <i class="fas fa-tools"></i>
+            </div>
+            <div class="stat-number" data-target="8">0</div>
+            <div class="stat-label">Technologies</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CERTIFICATIONS -->
+  <section id="certifications" class="certifications">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Certifications & Continuous Learning</h2>
+        <p class="section-subtitle">My learning journey and achievements</p>
+      </div>
+      <div class="certifications-grid">
+        <div class="cert-card glass-card">
+          <div class="cert-number">01</div>
+          <div class="cert-content">
+            <h3>Core Java (Naresh IT)</h3>
+            <p>Comprehensive Java programming fundamentals and object-oriented concepts</p>
+            <div class="cert-badge">
+              <i class="fas fa-certificate"></i>
+              <span>Completed</span>
+            </div>
+          </div>
+        </div>
+        <div class="cert-card glass-card">
+          <div class="cert-number">02</div>
+          <div class="cert-content">
+            <h3>Microsoft Career Essentials in Software Development</h3>
+            <p>Professional software development skills and industry best practices</p>
+            <div class="cert-badge">
+              <i class="fas fa-certificate"></i>
+              <span>Completed</span>
+            </div>
+          </div>
+        </div>
+        <div class="cert-card glass-card">
+          <div class="cert-number">03</div>
+          <div class="cert-content">
+            <h3>AWS Solutions Architecture Job Simulation</h3>
+            <p>Cloud architecture design and AWS services implementation</p>
+            <div class="cert-badge">
+              <i class="fas fa-certificate"></i>
+              <span>Completed</span>
+            </div>
+          </div>
+        </div>
+        <div class="cert-card glass-card">
+          <div class="cert-number">04</div>
+          <div class="cert-content">
+            <h3>Deloitte Data Analytics Virtual Internship</h3>
+            <p>Data analysis, visualization, and business intelligence skills</p>
+            <div class="cert-badge">
+              <i class="fas fa-certificate"></i>
+              <span>Completed</span>
+            </div>
+          </div>
+        </div>
+        <div class="cert-card glass-card">
+          <div class="cert-number">05</div>
+          <div class="cert-content">
+            <h3>Accenture Data Analytics & Visualization</h3>
+            <p>Advanced data analytics and visualization techniques</p>
+            <div class="cert-badge">
+              <i class="fas fa-certificate"></i>
+              <span>Completed</span>
+            </div>
+          </div>
+        </div>
+        <div class="cert-card glass-card">
+          <div class="cert-number">06</div>
+          <div class="cert-content">
+            <h3>Infosys Cohort 5 Training (Technical)</h3>
+            <p>Technical training program covering modern software development practices</p>
+            <div class="cert-badge">
+              <i class="fas fa-certificate"></i>
+              <span>Completed</span>
+            </div>
+          </div>
+        </div>
+        <div class="cert-card glass-card">
+          <div class="cert-number">07</div>
+          <div class="cert-content">
+            <h3>Cybersecurity Course (Aadhar & Capgemini)</h3>
+            <p>Cybersecurity fundamentals and best practices</p>
+            <div class="cert-badge">
+              <i class="fas fa-certificate"></i>
+              <span>Completed</span>
+            </div>
+          </div>
+        </div>
+        <div class="cert-card glass-card">
+          <div class="cert-number">08</div>
+          <div class="cert-content">
+            <h3>IoT2HACK-2K24 Hackathon Participant</h3>
+            <p>2-day task-based IoT hackathon participation</p>
+            <div class="cert-badge">
+              <i class="fas fa-trophy"></i>
+              <span>Participant</span>
+            </div>
+          </div>
+        </div>
+        <div class="cert-card glass-card">
+          <div class="cert-number">09</div>
+          <div class="cert-content">
+            <h3>Diligent Refresher Program - Embedded Systems</h3>
+            <p>6-day intensive embedded systems training program</p>
+            <div class="cert-badge">
+              <i class="fas fa-certificate"></i>
+              <span>Completed</span>
+            </div>
+          </div>
+        </div>
+        <div class="cert-card glass-card">
+          <div class="cert-number">10</div>
+          <div class="cert-content">
+            <h3>Futureskill-IOT Software Analyst</h3>
+            <p>IoT software analysis and development skills</p>
+            <div class="cert-badge">
+              <i class="fas fa-certificate"></i>
+              <span>Completed</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROFESSIONAL EXPERIENCE -->
+  <section id="experience" class="experience">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Professional Experience</h2>
+        <p class="section-subtitle">My professional journey and achievements</p>
+      </div>
+      <div class="experience-timeline">
+        <div class="timeline-item glass-card">
+          <div class="timeline-marker">
+            <i class="fas fa-code"></i>
+          </div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <h3>Learn Square - Java Full-Stack Intern</h3>
+              <span class="timeline-date">Jun 2025 - Jul 2025</span>
+            </div>
+            <p>Developed RESTful APIs (Spring Boot, MySQL) to support user authentication and progress tracking. 
+            Implemented front-end components in React/HTML/CSS enhancing interface responsiveness by 15%. 
+            Integrated database operations for quiz modules and collaborated with UX designer to refine UI workflows. 
+            Conducted unit testing (JUnit) and bug fixes, increasing test coverage from 70% to 95%.</p>
+            <div class="timeline-tags">
+              <span class="tag">Java</span>
+              <span class="tag">Spring Boot</span>
+              <span class="tag">React</span>
+              <span class="tag">MySQL</span>
+              <span class="tag">JUnit</span>
+            </div>
+          </div>
+        </div>
+        <div class="timeline-item glass-card">
+          <div class="timeline-marker">
+            <i class="fas fa-microchip"></i>
+          </div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <h3>ACITE-Eduskills - Microchip Embedded Systems Intern (Virtual)</h3>
+              <span class="timeline-date">Apr 2024 - Jun 2024</span>
+            </div>
+            <p>Led development of a microcontroller project using Microchip tools, designing PCB prototype for IoT sensor module. 
+            Implemented firmware in Embedded C for real-time sensor data acquisition and USB communication. 
+            Collaborated with remote team to integrate sensor libraries and improving data sampling stability by ~20%. 
+            Documented design decisions and performed functional testing using oscilloscopes/logic analyzers.</p>
+            <div class="timeline-tags">
+              <span class="tag">Embedded C</span>
+              <span class="tag">Microchip</span>
+              <span class="tag">IoT</span>
+              <span class="tag">PCB Design</span>
+              <span class="tag">Firmware</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EDUCATION -->
+  <section id="education" class="education">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Education Background</h2>
+        <p class="section-subtitle">My academic journey</p>
+      </div>
+      <div class="education-timeline">
+        <div class="edu-item glass-card">
+          <div class="edu-number">01</div>
+          <div class="edu-content">
+            <h3>Sri Vasavi Engineering College, Tadepalligudem</h3>
+            <p class="edu-degree">Bachelor of Technology - Electronics & Communication Engineering</p>
+            <span class="edu-duration">2022-2026 | CGPA: 8.57/10</span>
+          </div>
+        </div>
+        <div class="edu-item glass-card">
+          <div class="edu-number">02</div>
+          <div class="edu-content">
+            <h3>Aditya Junior College, Palakol</h3>
+            <p class="edu-degree">Intermediate - Mathematics, Physics, Chemistry (M.P.C)</p>
+            <span class="edu-duration">2020-2022 | CGPA: 8.9/10</span>
+          </div>
+        </div>
+        <div class="edu-item glass-card">
+          <div class="edu-number">03</div>
+          <div class="edu-content">
+            <h3>Sri Vaishnavi High School</h3>
+            <p class="edu-degree">Secondary School Certificate (SSC)</p>
+            <span class="edu-duration">2019-2020 | CGPA: 10/10</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="projects">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">My Projects</h2>
+        <p class="section-subtitle">Some of my recent work</p>
+      </div>
+      <div class="projects-filter">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="web">Web Apps</button>
+        <button class="filter-btn" data-filter="api">APIs</button>
+        <button class="filter-btn" data-filter="mobile">Mobile</button>
+      </div>
+      <div class="projects-grid" id="projects-grid"></div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="skills">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Technical Skills</h2>
+        <p class="section-subtitle">Technologies and tools I work with</p>
+      </div>
+    <div class="skills-grid">
+        <div class="skill-card glass-card">
+          <div class="skill-icon">
+            <i class="fab fa-java"></i>
+          </div>
+          <div class="skill-content">
+        <h3>Java</h3>
+            <p>Core Java programming with object-oriented concepts and advanced features</p>
+            <div class="skill-level">
+              <div class="level-bar">
+                <div class="level-fill" data-level="90"></div>
+              </div>
+              <span class="level-text">Expert</span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="skill-card glass-card">
+          <div class="skill-icon">
+            <i class="fas fa-leaf"></i>
+      </div>
+          <div class="skill-content">
+        <h3>Spring Boot</h3>
+            <p>RESTful API development and microservices architecture</p>
+            <div class="skill-level">
+              <div class="level-bar">
+                <div class="level-fill" data-level="85"></div>
+              </div>
+              <span class="level-text">Advanced</span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="skill-card glass-card">
+          <div class="skill-icon">
+            <i class="fab fa-js-square"></i>
+          </div>
+          <div class="skill-content">
+            <h3>JavaScript</h3>
+            <p>Frontend development and interactive web applications</p>
+            <div class="skill-level">
+              <div class="level-bar">
+                <div class="level-fill" data-level="80"></div>
+              </div>
+              <span class="level-text">Advanced</span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="skill-card glass-card">
+          <div class="skill-icon">
+            <i class="fab fa-react"></i>
+          </div>
+          <div class="skill-content">
+            <h3>React</h3>
+            <p>Component-based UI development and state management</p>
+            <div class="skill-level">
+              <div class="level-bar">
+                <div class="level-fill" data-level="75"></div>
+              </div>
+              <span class="level-text">Intermediate</span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="skill-card glass-card">
+          <div class="skill-icon">
+            <i class="fas fa-database"></i>
+          </div>
+          <div class="skill-content">
+            <h3>MySQL</h3>
+            <p>Database design, optimization, and complex query development</p>
+            <div class="skill-level">
+              <div class="level-bar">
+                <div class="level-fill" data-level="85"></div>
+              </div>
+              <span class="level-text">Advanced</span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="skill-card glass-card">
+          <div class="skill-icon">
+            <i class="fab fa-python"></i>
+          </div>
+          <div class="skill-content">
+            <h3>Python</h3>
+            <p>Scripting, automation, and data analysis applications</p>
+            <div class="skill-level">
+              <div class="level-bar">
+                <div class="level-fill" data-level="70"></div>
+              </div>
+              <span class="level-text">Intermediate</span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="skill-card glass-card">
+          <div class="skill-icon">
+            <i class="fas fa-microchip"></i>
+          </div>
+          <div class="skill-content">
+            <h3>Embedded C</h3>
+            <p>Microcontroller programming and IoT device development</p>
+            <div class="skill-level">
+              <div class="level-bar">
+                <div class="level-fill" data-level="75"></div>
+              </div>
+              <span class="level-text">Intermediate</span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="skill-card glass-card">
+          <div class="skill-icon">
+            <i class="fas fa-code-branch"></i>
+          </div>
+          <div class="skill-content">
+            <h3>RESTful APIs</h3>
+            <p>API design, development, and integration with frontend applications</p>
+            <div class="skill-level">
+              <div class="level-bar">
+                <div class="level-fill" data-level="85"></div>
+              </div>
+              <span class="level-text">Advanced</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ACHIEVEMENTS & AWARDS -->
+  <section id="achievements" class="achievements">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Achievements & Awards</h2>
+        <p class="section-subtitle">Recognition and accomplishments</p>
+      </div>
+      <div class="achievements-grid">
+        <div class="achievement-card glass-card">
+          <div class="achievement-icon">
+            <i class="fas fa-trophy"></i>
+          </div>
+          <div class="achievement-content">
+            <h3>1st Place - National Space Day Poster Presentation</h3>
+            <p>Won first place in the National Space Day poster presentation competition, showcasing creativity and technical communication skills.</p>
+            <div class="achievement-badge">
+              <i class="fas fa-medal"></i>
+              <span>Winner</span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="achievement-card glass-card">
+          <div class="achievement-icon">
+            <i class="fas fa-certificate"></i>
+          </div>
+          <div class="achievement-content">
+            <h3>NPTEL Elite Certifications</h3>
+            <p>Earned NPTEL Elite certifications in Internet of Things and Programming in Java, demonstrating expertise in cutting-edge technologies.</p>
+            <div class="achievement-badge">
+              <i class="fas fa-star"></i>
+              <span>Elite</span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="achievement-card glass-card">
+          <div class="achievement-icon">
+            <i class="fas fa-users"></i>
+          </div>
+          <div class="achievement-content">
+            <h3>Leadership & Coordination</h3>
+            <p>Coordinator for Photography Club and Event coordinator for Tech Euphoria 2K25 at college level, demonstrating leadership and organizational skills.</p>
+            <div class="achievement-badge">
+              <i class="fas fa-crown"></i>
+              <span>Coordinator</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FUTURE ASPIRATIONS -->
+  <section id="aspirations" class="aspirations">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Future Aspirations</h2>
+        <p class="section-subtitle">My career goals and vision</p>
+      </div>
+      <div class="aspirations-content">
+        <div class="aspirations-card glass-card">
+          <div class="aspirations-icon">
+            <i class="fas fa-rocket"></i>
+          </div>
+          <div class="aspirations-text">
+            <p>
+              I’m building my career as a Full Stack Java Developer—designing clean APIs with Spring Boot,
+              crafting responsive UIs, and shipping reliable features backed by solid engineering practices.
+              I’m seeking teams where I can contribute end‑to‑end, learn from code reviews, and turn complex
+              problems into simple, scalable solutions that make a real impact.
+            </p>
+      </div>
+      </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Connect with MOUNICA</h2>
+        <p class="section-subtitle">Reach out to discuss collaborations, opportunities, or just to connect!</p>
+      </div>
+      <div class="contact-content">
+        <div class="contact-info">
+          <div class="contact-card glass-card">
+            <div class="contact-icon">
+              <i class="fas fa-envelope"></i>
+            </div>
+            <div class="contact-details">
+              <h3>Email</h3>
+              <p>polisettymounica@gmail.com</p>
+              <a href="mailto:polisettymounica@gmail.com" class="contact-link">Send Email</a>
+            </div>
+          </div>
+          <div class="contact-card glass-card">
+            <div class="contact-icon">
+              <i class="fas fa-phone"></i>
+            </div>
+            <div class="contact-details">
+              <h3>Phone</h3>
+              <p>(+91) 82475 23131</p>
+              <a href="tel:+918247523131" class="contact-link">Call Me</a>
+            </div>
+          </div>
+          <div class="contact-card glass-card">
+            <div class="contact-icon">
+              <i class="fab fa-linkedin"></i>
+            </div>
+            <div class="contact-details">
+              <h3>LinkedIn</h3>
+              <p>Professional Network</p>
+              <a href="https://www.linkedin.com/in/mounica-polisetty-721678303" class="contact-link" target="_blank" rel="noopener noreferrer">LinkedIn Profile</a>
+            </div>
+          </div>
+          <div class="contact-card glass-card">
+            <div class="contact-icon">
+              <i class="fab fa-github"></i>
+            </div>
+            <div class="contact-details">
+              <h3>GitHub</h3>
+              <p>Code Repository</p>
+              <a href="https://github.com/Mounicapolisetty" class="contact-link" target="_blank" rel="noopener noreferrer">View Projects</a>
+            </div>
+          </div>
+        </div>
+        <div class="contact-form glass-card">
+          <h3>Send a Message</h3>
+          <form id="contactForm">
+            <div class="form-group">
+              <input type="text" id="name" name="name" placeholder="Your Name" required>
+            </div>
+            <div class="form-group">
+              <input type="email" id="email" name="email" placeholder="Your Email" required>
+            </div>
+            <div class="form-group">
+              <input type="text" id="subject" name="subject" placeholder="Subject" required>
+            </div>
+            <div class="form-group">
+              <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">
+              <span>Send Message</span>
+              <i class="fas fa-paper-plane"></i>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-text">
+          <p>© <span id="year"></span> MOUNICA SURYA DURGA NAGA SREE POLISETTY. Built with ❤️ and modern web technologies.</p>
+        </div>
+        <div class="footer-social">
+          <a href="https://github.com/Mounicapolisetty" class="social-link" aria-label="GitHub" target="_blank" rel="noopener noreferrer">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/mounica-polisetty-721678303" class="social-link" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a href="#" class="social-link" aria-label="Twitter">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a href="mailto:polisettymounica@gmail.com" class="social-link" aria-label="Email">
+            <i class="fas fa-envelope"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
