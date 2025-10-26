@@ -25,7 +25,10 @@
   <header class="navbar">
     <div class="container nav-container">
       <div class="logo">
-        
+        <a href="#hero" class="logo-link">
+          <span class="logo-name">MOUNICA POLISETTY</span>
+          <span class="logo-portfolio">PORTFOLIO</span>
+        </a>
       </div>
       <nav class="nav-menu">
         <ul class="nav-links">
@@ -73,7 +76,7 @@
             <span class="cursor">|</span>
           </div>
           <p class="hero-description">
-            Sekking for an entry-level software engineering position within a product-oriented team where I can leverage 
+            Seeking for an entry-level software engineering position within a product-oriented team where I can leverage 
             solid programming foundations, data structures knowledge, and system-design principles to develop scalable, 
             enterprise-grade backend or full-stack solutions.
           </p>
@@ -684,6 +687,19 @@
               <a href="https://github.com/Mounicapolisetty" class="contact-link" target="_blank" rel="noopener noreferrer">View Projects</a>
             </div>
           </div>
+          <div class="contact-card glass-card">
+            <div class="contact-icon">
+              <i class="fas fa-file-pdf"></i>
+            </div>
+            <div class="contact-details">
+              <h3>Resume</h3>
+              <p>Download my CV</p>
+              <a href="assets/resume.pdf" class="contact-link resume-download" download="MOUNICA_SURYA_DURGA_NAGA_SREE_POLISETTY_Resume.pdf">
+                <i class="fas fa-download"></i>
+                Download Resume
+              </a>
+            </div>
+          </div>
         </div>
         <div class="contact-form glass-card">
           <h3>Send a Message</h3>
@@ -724,9 +740,6 @@
           <a href="https://www.linkedin.com/in/mounica-polisetty-721678303" class="social-link" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
             <i class="fab fa-linkedin"></i>
           </a>
-          <a href="#" class="social-link" aria-label="Twitter">
-            <i class="fab fa-twitter"></i>
-          </a>
           <a href="mailto:polisettymounica@gmail.com" class="social-link" aria-label="Email">
             <i class="fas fa-envelope"></i>
           </a>
@@ -736,5 +749,12 @@
   </footer>
 
   <script src="main.js"></script>
+  <!-- EmailJS -->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script type="text/javascript">
+    (function(){
+      emailjs.init("YOUR_PUBLIC_KEY"); // Replace with your EmailJS public key
+    })();
+  </script>
 </body>
 </html>
