@@ -465,17 +465,49 @@ class ContactForm {
   handleSubmit() {
     contactForm.addEventListener('submit', (e) => {
       e.preventDefault();
-      
+
       const formData = new FormData(contactForm);
       const data = Object.fromEntries(formData);
-      
-      // Simulate form submission
+
+      // Show loading state
       this.showLoading();
-      
-      setTimeout(() => {
-        this.showSuccess();
-        contactForm.reset();
-      }, 2000);
+
+      // EmailJS configuration (replace with your actual IDs)
+      const serviceID = 'YOUR_SERVICE_ID';
+      const templateID = 'YOUR_TEMPLATE_ID';
+      const publicKeyFromInit = (typeof emailjs !== 'undefined' && emailjs.__publicKey) || null;
+
+      // Basic config validation to avoid silent failures
+      if (typeof emailjs === 'undefined') {
+        this.showError('Email service not loaded. Check internet or EmailJS script.');
+        return;
+      }
+      if (serviceID.startsWith('YOUR_') || templateID.startsWith('YOUR_')) {
+        this.showError('Email not configured. Set Service ID and Template ID.');
+        return;
+      }
+
+      // Prepare template parameters
+      const templateParams = {
+        from_name: data.name,
+        from_email: data.email,
+        subject: data.subject,
+        message: data.message,
+        to_email: 'polisettymounica@gmail.com'
+      };
+
+      // Send email using EmailJS v4
+      emailjs.send(serviceID, templateID, templateParams)
+        .then((response) => {
+          console.log('Email sent successfully:', response);
+          this.showSuccess();
+          contactForm.reset();
+        })
+        .catch((error) => {
+          console.error('Email sending failed:', error);
+          const message = (error && (error.text || error.message)) ? String(error.text || error.message) : 'Unknown error';
+          this.showError('Send failed: ' + message);
+        });
     });
   }
 
@@ -498,6 +530,28 @@ class ContactForm {
     notification.innerHTML = `
       <i class="fas fa-check-circle"></i>
       <span>Message sent successfully!</span>
+    `;
+    
+    document.body.appendChild(notification);
+    
+    setTimeout(() => {
+      notification.classList.add('show');
+    }, 100);
+    
+    setTimeout(() => {
+      notification.classList.remove('show');
+      setTimeout(() => {
+        document.body.removeChild(notification);
+      }, 300);
+    }, 3000);
+  }
+
+  showError(msg) {
+    const notification = document.createElement('div');
+    notification.className = 'notification error';
+    notification.innerHTML = `
+      <i class="fas fa-exclamation-circle"></i>
+      <span>${msg || 'Failed to send message. Please try again.'}</span>
     `;
     
     document.body.appendChild(notification);
@@ -625,6 +679,10 @@ class NotificationSystem {
       
       .notification.success {
         border-left: 4px solid var(--success);
+      }
+      
+      .notification.error {
+        border-left: 4px solid #ef4444;
       }
       
       .notification.error {
